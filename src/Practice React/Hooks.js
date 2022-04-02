@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 
 function MyHooks(){
+    // useState practice
     const [data , changeHook] = useState("hello");
 
   function  changeHookHandler(){        
