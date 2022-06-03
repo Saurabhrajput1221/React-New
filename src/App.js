@@ -1,6 +1,10 @@
 import './App.css'
-import MyHooks from './Practice React/Hooks';
-import Myprops from './Practice React/Props';
+// UseEffectHook
+import UseEffectHook from './Practice React/UseEffectHook';
+// props
+// import Myprops from './Practice React/Props';
+// use State
+// import MyHooks from './Practice React/Hooks';
 
 
 function App() {
@@ -12,7 +16,10 @@ function App() {
      <Myprops moreInfo={"mail Id is : Saurabh123@gmail.com"}></Myprops> */}
 
      {/* Hooks in React */}
-    <MyHooks></MyHooks>
+    {/* <MyHooks></MyHooks> */}
+
+    {/* UseEffectHook  */}
+    <UseEffectHook />
 
     </div>
   );
