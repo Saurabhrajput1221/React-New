@@ -2,19 +2,46 @@
 
 import React, { useState } from "react";
 
-export default function (Props) {
-  {   /* /******************************* */  }
+export default function Textform(Props) {
+  {
+    /* /******************************* */
+  }
 
   //   const [count, setcount] = useState("Button 1");
   //   const [newcount, NewSetcount] = useState("Button 2");
   //   const [name, SetName] = useState("Siddu");
 
-  {    /* /******************************* */  }
+  {
+    /* /******************************* */
+  }
+ 
+  const [text, SetText] = useState("");
 
-    const [ Text , SetText] = useState("hello");
-    handleOnchange = (event)=>{
-            SetText(event.target.value)
-    }
+  const AlertClick=()=>{
+    setTimeout(() => {
+      alert("Alert activated after 2 Seconds");
+      
+    }, 2000);
+  }
+
+
+  const handleOnchange = (event) => {
+    SetText(event.target.value);
+  };
+
+  const ClearText = () => {
+    let clearall = "";
+    SetText(clearall);
+  };
+
+  const ToUpperCase = () => {
+    let upper = text.toLocaleUpperCase();
+    SetText(upper);
+  };
+  const Tochange = () => {
+    let changes = text.toLocaleLowerCase();
+    SetText(changes);
+  };
 
   return (
     <>
@@ -49,10 +76,32 @@ export default function (Props) {
 
       {/* /*************************************************** */}
       <div className="container">
-      <textarea className="form-control"  onChange={ handleOnchange } id="myBox" rows={6}></textarea>
+        <textarea
+          className="form-control"
+          id="myBox"
+          value={text}
+          onChange={handleOnchange}
+          rows={6}
+        ></textarea>
+        <button className="btn btn-danger mx-2 my-2" onClick={ClearText}>
+          Clear text
+        </button>
+
+        <button className=" btn btn-success mx-2 my-2" onClick={ToUpperCase}>
+          Convert To UpperCase
+        </button>
+
+        <button className=" btn btn-secondary mx-2 my2" onClick={Tochange}>
+          Convert To LoverCase
+        </button>
+        <button className="btn btn-success my-2 mx2" onClick={AlertClick}>Alert Button</button>
+
         <h1>Summary</h1>
-        <h3> 34343 Words and 4545435345 Characters </h3>
+        <h3>
+          {text.split(" ").length} Words and {text.length} Characters{" "}
+        </h3>
         <h2> Preiview </h2>
+        <p>{text} </p>
       </div>
     </>
   );
