@@ -45,6 +45,7 @@ export default function Textform(Props) {
 
   return (
     <>
+  
       {/* /**********************************************************
                Basic of React Hooks                 */}
 
@@ -98,7 +99,7 @@ export default function Textform(Props) {
 
         <h1>Summary</h1>
         <h3>
-          {text.split(" ").length} Words and {text.length} Characters{" "}
+          {text.split(" ").length -1 } Words and {text.length} Characters{" "}
         </h3>
         <h2> Preiview </h2>
         <p>{text} </p>
