@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function (Props) {
+export default function Navbar(Props) {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,6 +44,13 @@ export default function (Props) {
                 News
               </Link>
             </li>
+            <li className="nav-item"><Link className="nav-link news" to="/business">Business </Link></li> 
+            <li className="nav-item"><Link className="nav-link entertainment" to="/Entertainment">Entertainment </Link></li>
+            <li className="nav-item"><Link className="nav-link general" to="/general">General </Link></li>
+            <li className="nav-item"><Link className="nav-link helth" to="/helth">Health </Link></li>
+            <li className="nav-item"><Link className="nav-link science" to="/science">Sceince </Link></li>
+            <li className="nav-item"><Link className="nav-link sport" to="/sport">Sports </Link></li>
+            <li className="nav-item"><Link className="nav-link technology" to="/technolagy">Technology </Link></li>
           </ul>
         </div>
       </nav>
