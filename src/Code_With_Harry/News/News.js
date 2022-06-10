@@ -3,10 +3,10 @@ import NewsItems from './NewsItems'
 
 export default function () {
   return (
-    <>This is my News Component
+    <>
+    <NewsItems title="my title"></NewsItems>
     <NewsItems></NewsItems>
-    <NewsItems></NewsItems>
-    <NewsItems></NewsItems>
+    <NewsItems description="my description"></NewsItems>
     <NewsItems></NewsItems>
     <NewsItems></NewsItems>
     <NewsItems></NewsItems>
