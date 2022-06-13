@@ -6,14 +6,19 @@
 // // import PrTextform from "./Code_With_Harry/PrTextform";
 // import Textform from "./Code_With_Harry/Practice/Textform";
 /********************************New Components***************** */
+// Didnot Completed News App
+// import Navbar from "./Code_With_Harry/News/Navbar";
+// import News from "./Code_With_Harry/News/News";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import ContactUs from "./Code_With_Harry/News/ContactUs";
+// import Link from "./Code_With_Harry/News/Link";
+// import About from "./Code_With_Harry/News/About";
 
-import Navbar from "./Code_With_Harry/News/Navbar";
-import News from "./Code_With_Harry/News/News";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ContactUs from "./Code_With_Harry/News/ContactUs";
-import Link from "./Code_With_Harry/News/Link";
-import About from "./Code_With_Harry/News/About";
+import UseStates from "./Code_With_Harry/Hooks/UseStates";
 
+
+
+/********************************New Components***************** */
 function App() {
   return (
     <>
@@ -41,14 +46,19 @@ function App() {
       </Routes> */}
       {/* ************************************************** */}
       {/* NewsAPI use... */}
-      <h1>This is my news NewsAPI</h1>
+      {/* <h1>This is my news NewsAPI</h1>
       <Navbar title="News App"></Navbar>
       <Routes>
         <Route path="/" element={<Link />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/News" element={<News />}></Route>
         <Route path="/contact" element={<ContactUs />}></Route>
-      </Routes>
+      </Routes> */}
+      {/* ************************************************** */}
+      {/* Hooks in React 1. UseState */}
+      <UseStates></UseStates>
+   
+
     </>
   );
 }
