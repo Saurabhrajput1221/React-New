@@ -14,7 +14,8 @@
 // import Link from "./Code_With_Harry/News/Link";
 // import About from "./Code_With_Harry/News/About";
 
-import UseStates from "./Code_With_Harry/Hooks/UseStates";
+import UseEffect from "./Code_With_Harry/Hooks/UseEffect";
+// import UseStates from "./Code_With_Harry/Hooks/UseStates";
 
 
 
@@ -56,7 +57,8 @@ function App() {
       </Routes> */}
       {/* ************************************************** */}
       {/* Hooks in React 1. UseState */}
-      <UseStates></UseStates>
+      {/* <UseStates></UseStates> */}
+      <UseEffect></UseEffect>
    
 
     </>
