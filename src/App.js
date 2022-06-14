@@ -14,11 +14,11 @@
 // import Link from "./Code_With_Harry/News/Link";
 // import About from "./Code_With_Harry/News/About";
 
-import UseEffect from "./Code_With_Harry/Hooks/UseEffect";
+// import UseEffect from "./Code_With_Harry/Hooks/UseEffect";
 // import UseStates from "./Code_With_Harry/Hooks/UseStates";
 
 
-
+ 
 /********************************New Components***************** */
 function App() {
   return (
@@ -58,7 +58,7 @@ function App() {
       {/* ************************************************** */}
       {/* Hooks in React 1. UseState */}
       {/* <UseStates></UseStates> */}
-      <UseEffect></UseEffect>
+      {/* <UseEffect></UseEffect> */}
    
 
     </>
