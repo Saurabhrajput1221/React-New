@@ -14,10 +14,13 @@
 // import Link from "./Code_With_Harry/News/Link";
 // import About from "./Code_With_Harry/News/About";
 
+/********************************New Components***************** */
+
 // import UseEffect from "./Code_With_Harry/Hooks/UseEffect";
 // import UseStates from "./Code_With_Harry/Hooks/UseStates";
 
 /********************************New Components***************** */
+import FetchApi from "./Code_With_Harry/FetchApi";
 function App() {
   return (
     <>
@@ -58,7 +61,11 @@ function App() {
       {/* <UseStates></UseStates> */}
       {/* <UseEffect></UseEffect> */}
       {/* ************************************************** */}
-      
+      <h1>Hello</h1>
+      <div>
+      <FetchApi></FetchApi>
+
+      </div>
     </>
   );
 }
