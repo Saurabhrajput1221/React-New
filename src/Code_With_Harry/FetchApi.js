@@ -106,10 +106,10 @@ export default function FetchApi() {
       {/* ***************Api 3 Practice At my own (Drink Api) ************************************ */}
 
       <div className="container">
-        <div className="row-3">
-          <div className="col-3">
+        <div className="row">
             {Img.map((value) => {
               return(
+                <div className="col-3">
 
                 <div className="card">
                   <h1>{value.title}</h1>
@@ -119,10 +119,10 @@ export default function FetchApi() {
                <a href={value.url} className="btn btn-primary">Read More</a>
              </div>
            </div>
+            </div>
                )
             })}
           </div>
-        </div>
       </div>
     </>
   );
