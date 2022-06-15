@@ -61,7 +61,7 @@ function App() {
       {/* <UseStates></UseStates> */}
       {/* <UseEffect></UseEffect> */}
       {/* ************************************************** */}
-      <h1>Hello</h1>
+      <h1>Fetching data from News Api</h1>
       <div>
       <FetchApi></FetchApi>
 

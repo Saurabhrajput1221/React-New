@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 
 export default function FetchApi() {
   //   const [Users, fetchUsers] = useState([]);
-  const [PracticeApi, SetPracticeApi] = useState([]);
+  // const [data, setdata] = useState([]);
+  const [Img, setImg] = useState([]);
+
   //   {
   /* ******************Fetch Api******************** */
   {
@@ -20,18 +22,30 @@ export default function FetchApi() {
   //     getData();
   //   }, []);
 
-
-  {    /* ***************Api 2 Practice************************************ */  }
- useEffect(()=>{
-     fetch('https://reqres.in/api/users?page=2')
-     .then((PrApi)=> PrApi.json())
-     .then((PrApi)=>{
-         console.log(PrApi);
-         SetPracticeApi(PrApi);
-     })
-         
-     
- }, [])
+  {
+    /* ***************Api 2 Practice************************************ */
+  }
+  // useEffect(() => {
+  //   fetch(
+  //     "https://newsapi.org/v2/top-headlines?country=us&apiKey=6163cbe259744c738cdacf330afb4d17"
+  //   )
+  //     .then((PrApi) => PrApi.json())
+  //     .then((PrApi) => {
+  //       console.log(PrApi);
+  //       setdata(PrApi.articles);
+  //     });
+  // }, []);
+  {
+    /* ***************Api 3 Practice at my own (Dirnk Api)************************************ */
+  }
+  useEffect(() => {
+    fetch("https://newsapi.org/v2/top-headlines/sources?apiKey=6163cbe259744c738cdacf330afb4d17")
+      .then((dogImg) => dogImg.json())
+      .then((dogImg) => {
+        console.log(dogImg);
+        setImg(dogImg.sources);
+      });
+  }, []);
 
   return (
     <>
@@ -46,20 +60,69 @@ export default function FetchApi() {
               <p>This is UserName = {item.username}</p>
               <p>This is city address = {item.address.city}</p>
               <p>This is Zip Code = {item.address.zipcode}</p>
-            </li>
+            </li>                
           );
         })}
       </ul> */}
 
-      {/* ***************Api 2 Practice************************************ */}
-      <div>
-          {PracticeApi.map((item, id)=>{
+      {/* ***************Api 2 Practice (News Api)************************************ */}
+      {/* <div>
+          {PracticeApi.map((page, id)=>{
               return(
                   <li key={id}>
-                      {/* <p>{item.emails}</p> */}
+                      
                   </li>
               )
           })}
+      </div> */}
+      {/* ***************Api 2 Practice (News Api)************************************ */}
+      {/* <div className="container" >
+        <div className="row">
+          {data.map((value) => {
+            return (
+              <div className="col-3">
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={value.urlToImage}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{value.title}</h5>
+                    <p className="card-text">
+                      {value.description}
+                    </p>
+                    <a href={value.url} className="btn btn-primary">
+                      Read More
+                    </a>
+                    <p>{value.author}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div> */}
+      {/* ***************Api 3 Practice At my own (Drink Api) ************************************ */}
+
+      <div className="container">
+        <div className="row-3">
+          <div className="col-3">
+            {Img.map((value) => {
+              return(
+
+                <div className="card">
+                  <h1>{value.title}</h1>
+             <div className="card-body" key={value.id}>
+               <h5 className="card-title">{value.category}</h5>
+               <p className="card-text">{value.description}</p>
+               <a href={value.url} className="btn btn-primary">Read More</a>
+             </div>
+           </div>
+               )
+            })}
+          </div>
+        </div>
       </div>
     </>
   );
