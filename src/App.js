@@ -14,13 +14,20 @@
 // import Link from "./Code_With_Harry/News/Link";
 // import About from "./Code_With_Harry/News/About";
 
+
 /********************************New Components***************** */
 
 // import UseEffect from "./Code_With_Harry/Hooks/UseEffect";
 // import UseStates from "./Code_With_Harry/Hooks/UseStates";
 
 /********************************New Components***************** */
-import FetchApi from "./Code_With_Harry/Api/FetchApi";
+
+// import FetchApi from "./Code_With_Harry/Api/FetchApi";
+
+/********************************New Components***************** */
+import Navbar from "./Code_With_Harry/Navbar";
+import Shopping from "./Code_With_Harry/Shopping";
+
 function App() {
   return (
     <>
@@ -61,11 +68,14 @@ function App() {
       {/* <UseStates></UseStates> */}
       {/* <UseEffect></UseEffect> */}
       {/* ************************************************** */}
-      <h1>Fetching data from News Api</h1>
+      {/* <h1>Fetching data from News Api</h1>
       <div>
-      <FetchApi></FetchApi>
-
-      </div>
+        <FetchApi></FetchApi>
+      </div> */}
+      {/* ************************************************** */}
+      <h1>Redux in React</h1>
+      <Navbar></Navbar>
+      <Shopping></Shopping>
     </>
   );
 }
