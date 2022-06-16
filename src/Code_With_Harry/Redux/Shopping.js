@@ -2,10 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { bindActionCreators } from "redux";
 // import { DepositeMoney, WithdrawMoney } from "./States/action-creators";
-import { actionCreators } from "./States/index";
+import { actionCreators } from "./States";
 
 const Shopping = () => {
-  const amount = useSelector(state => state.amount)
+  const amount = useSelector((state) => state.amount);
   const dispatch = useDispatch();
   const actions = bindActionCreators(actionCreators, dispatch);
   return (
@@ -19,20 +19,10 @@ const Shopping = () => {
       {/* ************ with bindActionCreator********************************************* */}
       <div>
         <button
-          className="btn btn-danger mx-2"
-          onClick={() => {
-            actions.WithdrawMoney(100);
-          }}
-        >
-          Withdraw
-        </button>
+          className="btn btn-danger mx-2" onClick={() => { actions.WithdrawMoney(100); }} >Withdraw</button>
         Bank Money :{amount}
         <button
-          className="btn btn-primary mx-2"
-          onClick={() => {
-            actions.DepositeMoney(100);
-          }}
-        >
+          className="btn btn-primary mx-2"onClick={() => {actions.DepositeMoney(1000);}}>
           Deposite
         </button>
       </div>

@@ -25,8 +25,8 @@
 // import FetchApi from "./Code_With_Harry/Api/FetchApi";
 
 /********************************New Components***************** */
-import Navbar from "./Code_With_Harry/Navbar";
-import Shopping from "./Code_With_Harry/Shopping";
+import Navbar from "./Code_With_Harry/Redux/Navbar";
+import Shopping from "./Code_With_Harry/Redux/Shopping";
 
 function App() {
   return (
