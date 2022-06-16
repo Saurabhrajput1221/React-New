@@ -20,7 +20,7 @@
 // import UseStates from "./Code_With_Harry/Hooks/UseStates";
 
 /********************************New Components***************** */
-import FetchApi from "./Code_With_Harry/FetchApi";
+import FetchApi from "./Code_With_Harry/Api/FetchApi";
 function App() {
   return (
     <>
