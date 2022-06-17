@@ -14,7 +14,6 @@
 // import Link from "./Code_With_Harry/News/Link";
 // import About from "./Code_With_Harry/News/About";
 
-
 /********************************New Components***************** */
 
 // import UseEffect from "./Code_With_Harry/Hooks/UseEffect";
@@ -25,8 +24,11 @@
 // import FetchApi from "./Code_With_Harry/Api/FetchApi";
 
 /********************************New Components***************** */
-import Navbar from "./Code_With_Harry/Redux/Navbar";
-import Shopping from "./Code_With_Harry/Redux/Shopping";
+// import Navbar from "./Code_With_Harry/Redux/Navbar";
+// import Shopping from "./Code_With_Harry/Redux/Shopping";
+/********************************New Components***************** */
+
+// import MyRedux from "./Code_With_Harry/Redux2/MyRedux";
 
 function App() {
   return (
@@ -36,7 +38,6 @@ function App() {
       {/* ************************************************** */}
       {/* <Navbar title="NewNavbar" Dropdown=" Dropdown 1"></Navbar> */}
       {/* ************************************************** */}
-
       {/* <div className="container">
           <Textform Heading="This is my TextInput using Props" />
         </div>
@@ -45,6 +46,7 @@ function App() {
         <PrTextform Heading= "heading"></PrTextform>
       </div> */}
       {/* </div> */}
+
       {/* ************************************************** */}
       {/* This is React router Practice*/}
       {/* <Routes>
@@ -73,9 +75,14 @@ function App() {
         <FetchApi></FetchApi>
       </div> */}
       {/* ************************************************** */}
-      <h1>Redux in React</h1>
+      {/* <h1>Redux 1 in React</h1>
       <Navbar></Navbar>
-      <Shopping></Shopping>
+      <Shopping></Shopping> */}
+      {/* ***********I am not able to sol at my own*************************************** */}
+      {/* <h1>Redux 2 in React</h1> */}
+      {/* <MyRedux /> */}
+      {/* *********************************************************************************** */}
+      <h1>This is React</h1>
     </>
   );
 }
